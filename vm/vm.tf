@@ -19,4 +19,4 @@ resource "google_compute_instance" "vm_instance" {
 # 		ssh-keys = "debian:${file("~/.ssh/id_rsa.pub")}coworker:${file("~/.ssh/id_rsa.pub")}"
 # 	}
 
-# }
+# 
