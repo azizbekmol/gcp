@@ -1,18 +1,18 @@
-# gcp
+# filestore
 ### terraform.tfvars
-vm_config = {
-        project = "iaac-307719"
-        region = "us-central1"
-        zone = "us-central1-c"
-        instance_name = "terraform-instance"
-        machine_type = "f1-micro"
-        image = "debian-cloud/debian-9"
-        firewall_name = "fw-allow-http"
-        network_tags = "webserver"
+fs_config = {
+    project = "iaac-307719"
+    region = "us-central1"
+    zone = "us-central1-c"
+    filestore_name = "nfsserver"
+    capacity_gb = 1024
+    tier = "BASIC_HDD"
+    file_share_name = "share1"
 }
-labels = {
-        name = "db"
-        env = "dev"
-        team = "devops"
-        quarter = "first"
-        builtby = "me"
+labels {
+	name = "db"
+	env = "dev"
+	team = "devops"
+	quarter = "first"
+	builtby = "me"
+}
