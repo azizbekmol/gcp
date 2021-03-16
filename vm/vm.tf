@@ -16,7 +16,7 @@ resource "google_compute_instance" "vm_instance" {
 
 	metadata_startup_script = file("startup.sh")
 	metadata = {
-		ssh-keys = "debian:${file("~/.ssh/id_rsa.pub")}"
+		ssh-keys = "debian:${file("~/.ssh/id_rsa.pub")}coworker:${file("~/.ssh/id_rsa.pub")}"
 	}
 
 }
