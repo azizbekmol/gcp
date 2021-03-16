@@ -7,6 +7,6 @@ gke_config = {
 	cluster_name = "my-gke-cluster"
     machine_type = "e2-medium"
 	node_count = 1
-	node_pull_name = "my-node-pull"
+	node_pool_name = "my-node-pool"
 	preemptible = true
 }
