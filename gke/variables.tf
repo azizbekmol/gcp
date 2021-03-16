@@ -1,7 +1,7 @@
 variable "gke_config" {
 	type = map(any)
 	default = {
-		project = "iaac-307719"
+		project = "ckad-302703"
 		region = "us-central1"
 		zone = "us-central1-c"
 		cluster_name = "my-gke-cluster"
